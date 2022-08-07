@@ -133,7 +133,6 @@ const DashBoard = () => {
       </div>
     );
   };
-
   const SendMoney = function () {
     const [amount, setAmount] = useState(0);
     const [destination, setDestination] = useState(0);
@@ -155,17 +154,10 @@ const DashBoard = () => {
             onSubmit={(e) => {
               e.preventDefault();
               if (session[0].balance >= amount) {
-                const transactionStatus = realizeTransaction(1, session[0], {
-                  account: destination,
-                  amount: amount
+                realizeTransaction(1, session[0], {
+                  account: Number(destination),
+                  amount: Number(amount)
                 });
-                if (!transactionStatus) {
-                  alert(
-                    "Ingresó un número de cuenta no válido. Verifique el número de cuenta"
-                  );
-                } else {
-                  alert("Transacción exitosa");
-                }
               } else {
                 alert("No tiene saldo para realizar esta operación.");
               }
@@ -211,7 +203,7 @@ const DashBoard = () => {
     return <WithDrawals />;
   } else if (action === 2) {
     return <SendMoney />;
-  } else if (action === 2) {
+  } else if (action === 3) {
     return <LogIn />;
   }
 };
