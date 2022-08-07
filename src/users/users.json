@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "admin",
+      "id": 102130124923,
+      "email": "admin@admin.com",
+      "password": "admin1234",
+      "account": 1234567890,
+      "balance": 100000000
+    },
+    {
+      "name": "superadmin",
+      "id": 11111111111111,
+      "email": "superadmin@admin.com",
+      "password": "superadmin1234",
+      "account": 9999999999,
+      "balance": 0
+    },
+    {
+      "name": "Jeysson",
+      "id": 1000004,
+      "email": "jeysson@developer.co",
+      "password": "admin1234",
+      "account": 7777777777,
+      "balance": 1000000
+    }
+  ]
+}

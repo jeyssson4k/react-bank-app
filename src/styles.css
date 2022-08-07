@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 120px 0 0 0;
+  width: 100%;
+  max-width: 1080px;
+}
+.App h1 {
+  font-size: 48px;
+  color: #32d6ff;
+}
+.App h3 {
+  font-style: oblique;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.App h2 {
+  font-size: 24px;
+  margin: 10px 0 20px 0;
+}
+button {
+  background: none;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+button:hover {
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.action-btn-group button {
+  margin: 0 12px;
+  border: 2px solid #32d6ff;
+  color: #32d6ff;
+  padding: 8px;
+  border-radius: 8px;
+}
+.action-btn-group button:hover {
+  background: #32d6ff;
+  color: #fff;
+}
+.return-btn,
+.return-menu-btn {
+  margin: 12px 0;
+  color: #fff;
+}
+.return-btn:hover,
+.return-menu-btn:hover {
+  color: #32d6ff;
+}
+.signup-form,
+.login-form,
+.sendmoney-form-group {
+  padding: 40px;
+  color: #fff;
+  width: 100%;
+  max-width: 1080px;
+}
+.signup-form {
+  border: 3px solid #32d6ff;
+  border-radius: 12px;
+}
+.signup-form h1,
+.login-form h1,
+.sendmoney-form-group h1 {
+  font-size: 32px;
+  color: #32d6ff;
+  margin: 20px 0;
+}
+.signup-form .signup-input,
+.login-form .login-input,
+.sendmoney-form-group .sendmoney-form .sendmoney-input {
+  margin: 4px 0;
+  display: flex;
+  flex-direction: column;
+}
+.signup-form .signup-input input,
+.login-form .login-input input,
+.sendmoney-form-group .sendmoney-form .sendmoney-input input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  transition: all 0.2s ease-out;
+  color: #fff;
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.signup-form .signup-input input:focus,
+.login-form .login-input input:focus,
+.sendmoney-form-group .sendmoney-form .sendmoney-input input:focus {
+  outline: none;
+  border-bottom: 2px solid #32d6ff;
+  margin: 12px 0;
+  color: #32d6ff;
+  transition: all 0.2s ease-in;
+  font-size: 16px;
+  box-shadow: none;
+}
+.signup-form .signup-submit button,
+.login-form .login-submit button,
+.sendmoney-form-group .sendmoney-form .sendmoney-submit button {
+  margin: 28px 0;
+  color: #fff;
+}
+.signup-form .signup-submit button:hover,
+.login-form .login-submit button:hover,
+.sendmoney-form-group .sendmoney-form .sendmoney-submit button:hover {
+  margin: 28px 0;
+  color: #32d6ff;
+}
+.dashboard {
+  color: #fff;
+  width: 100%;
+  max-width: 1080px;
+}
+.dashboard h1 {
+  margin: 60px 0 0 0;
+}
+.dashboard .dashboard-username {
+  color: #32d6ff;
+  font-style: oblique;
+  font-size: 24px;
+}
+.dashboard .dashboard-account-info {
+  display: flex;
+}
+.dashboard .dashboard-account-info div {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard .dashboard-account-info div:first-child {
+  margin: 0 16px 0 0;
+}
+.dashboard .dashboard-account-info h3 {
+  margin: 8px;
+  font-size: 16px;
+}
+.dashboard .dashboard-account-info span {
+  font-size: 14px;
+  margin: 2px 0;
+}
+.dashboard .dashboard-account-info .account-info-prop {
+  color: #ccc;
+}
+.dashboard .dashboard-account-info .account-info-prop .account-info-user {
+  color: #fff;
+  font-style: oblique;
+  background-color: #ff0074;
+  padding: 0 4px 0 0;
+  border-radius: 2px;
+}
+.dashboard .dashboard-action-menu {
+  display: flex;
+  margin: 40px 0 0 0;
+  flex-direction: column;
+}
+.dashboard .dashboard-action-menu .dashboard-action-buttons {
+  margin: 16px 0 0 0;
+  justify-content: space-evenly;
+}
+.dashboard .dashboard-action-menu .dashboard-action-buttons button {
+  margin: 0 12px 0 0;
+  border: 2px solid #32d6ff;
+  color: #32d6ff;
+  padding: 8px;
+  border-radius: 8px;
+}
+.dashboard .dashboard-action-menu .dashboard-action-buttons button:hover {
+  background: #32d6ff;
+  color: #fff;
+}
+.dashboard .dashboard-action-menu .dashboard-action-buttons .disabled {
+  margin: 8px 0 0 -6px;
+  color: #ccc;
+  border: none;
+  font-weight: regular;
+}
+.dashboard .dashboard-action-menu .dashboard-action-buttons .disabled:hover {
+  cursor: not-allowed;
+  color: #ccc;
+  background: none;
+}
+.dashboard .dashboard-action-menu .dashboard-action-logout {
+  margin: 60px 0 0 0;
+}
+
+.dashboard .dashboard-action-menu .dashboard-action-logout .logout-btn:hover {
+  color: #ff0074;
+}
