@@ -39,6 +39,8 @@ const SignUp = () => {
               email: email,
               password: password
             });
+          } else {
+            alert("Contraseña incorrecta. Debe contener letras y números");
           }
         }}
       >
